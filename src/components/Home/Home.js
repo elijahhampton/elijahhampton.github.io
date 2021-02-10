@@ -54,7 +54,7 @@ const Home = () => {
   }
 
   const handleOnNavigateProjectThree = () => {
-
+    alert("Welcome! You're already here!")
   }
 
   const handleOnOpenContactModal = () => setContactMeIsOpen(true);
@@ -172,7 +172,7 @@ const Home = () => {
                 find personal trainers instantly.  Users can create large scale create, buy, and sell large scale fitness programs as well as
                 participate in in-person or virtual live workout sessions.
                       </p>
-                      <button type="button" class="btn btn-primary btn-lg featured-work-btn">View Project</button>
+                      <button onClick={handleOnNavigateProjectOne} type="button" class="btn btn-primary btn-lg featured-work-btn">View Project</button>
 
             </div>
           </div>
@@ -189,7 +189,7 @@ const Home = () => {
               <p class="featured-work-description">
                 Lupa Checkout is a mobile first website built to faciliate the payment interface for fitness programs through the Lupa mobile application.
                       </p>
-                      <button type="button" class="btn btn-primary btn-lg featured-work-btn">View Project</button>
+                      <button onClick={handleOnNavigateProjectTwo} type="button" class="btn btn-primary btn-lg featured-work-btn">View Project</button>
             </div>
 
             <div class="col-lg-1" style={{margin: 'auto', width: 180, height: 340 }}>
@@ -214,7 +214,7 @@ const Home = () => {
               <p class="featured-work-description">
                 My personal website and portfolio that allows visitors to contact me for freelancing services, learn a bit about me, and find direct links through my blockchain content/threads on Twitter.
                       </p>
-                      <button type="button" class="btn btn-primary btn-lg featured-work-btn">View Project</button>
+                      <button onClick={handleOnNavigateProjectThree} type="button" class="btn btn-primary btn-lg featured-work-btn">View Project</button>
             </div>
           </div>
         </section>
