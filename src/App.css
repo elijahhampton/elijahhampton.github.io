@@ -8,6 +8,12 @@ html, body, #root, .App {
   padding: 0 !important;
   background-color: #EEEEEE;
   margin: auto;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: bolder;
+  color: #212121;
 }
 
 h1, h2 {
@@ -55,7 +61,7 @@ h1, h2 {
   border-top: dotted;
   border-color: rgb(124, 177, 179);
   background-color: transparent;
-  border-width: 5px;
+  border-width: 2px;
   display: flex;
   margin: 5% auto;
 }
@@ -84,9 +90,20 @@ h1, h2 {
 .section-header-text {
     letter-spacing: 2px;
     font-size: 1rem;
+    color: #212121;
 }
 
 /* Featured */
+.featured-work-type-text {
+  color: #AAAAAA;
+  font-size: 18px;
+}
+
+.featured-work-description {
+  color: #AAAAAA;
+  font-size: 12px;
+}
+
 .featured-work-container {
   margin: 40px 0px;
 }

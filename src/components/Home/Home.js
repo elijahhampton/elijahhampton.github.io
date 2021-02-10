@@ -71,7 +71,7 @@ const Home = () => {
             <div class="hero-section">
 
               <h1>
-                Elijah Hampton is a software engineer who specializes in mobile, web, and general software development.
+              Elijah Hampton is a software engineer who specializes in mobile, web, and general software development.
               </h1>
 
               <figure class="text-center">
@@ -90,7 +90,7 @@ const Home = () => {
             <div class="section sections-spacing">
               <div class="section-header">
                 <h3 class="section-header-text">
-                  BACKGROUND
+                  READ MORE ABOUT ME
                   </h3>
                 <div class="section-header-divider" />
               </div>
@@ -105,8 +105,10 @@ const Home = () => {
     </p>
 
                 <p style={{ fontWeight: '300' }}>
-                  My technological interest include general application development with a highlighted interest in blockchain development.  I am also readily available for freelance work for general applications.  Contact me and let's set up a time to talk about your next project.  In my free time I enjoy reading and exploring new blockchain companies in the FinTech space.  Check out some of my threads on decentralized applications and blockchain companies on my Twitter page.
+                  My technological interest include general application development with a highlighted interest in DeFi. I am also readily available for freelance work for general applications.  Contact me and let's set up a time to talk about your next project.  In my free time I enjoy reading and exploring new blockchain companies in the FinTech space.  Check out some of my threads on decentralized applications and blockchain companies on my Twitter page.
     </p>
+
+    <button type="button" class="btn btn-primary btn-lg featured-work-btn">Contact Me</button>
 
               </div>
             </div>
@@ -159,13 +161,13 @@ const Home = () => {
             </div>
 
             <div class="col-lg-7 d-flex flex-column align-items-lg-end align-items-center featured-work-container-right">
-              <h3 style={{ color: '#EEEEEE', fontSize: 18 }}>
+              <h3 class="featured-work-type-text">
                 Mobile Application
                       </h3>
               <h3 style={{ color: '#212121' }}>
                 Lupa: The Mobile App for Preventative Healthcare
                       </h3>
-              <p style={{ fontSize: 12, color: 'rgb(181, 181, 181)' }}>
+              <p class="featured-work-description strong">
                 Lupa is a free fitness social media application that allows users to start their own freelancing business as a personal trainer or
                 find personal trainers instantly.  Users can create large scale create, buy, and sell large scale fitness programs as well as
                 participate in in-person or virtual live workout sessions.
@@ -178,13 +180,13 @@ const Home = () => {
 
           <div class="section-spacing d-flex flex-lg-row flex-column-reverse justify-content-lg-evenly justify-content-center align-items-center featured-work-container">
             <div class="col-lg-7 d-flex flex-column align-items-lg-start align-items-center featured-work-container-left">
-              <h3 style={{ color: '#EEEEEE', fontSize: 18 }}>
+              <h3 class="featured-work-type-text">
                 Website
                       </h3>
               <h3 style={{ color: '#212121' }}>
                 Lupa Checkout: A Checkout Page for Fitness Programs on the Lupa Mobile App
                       </h3>
-              <p style={{ fontSize: 12, color: 'rgb(181, 181, 181)' }}>
+              <p class="featured-work-description">
                 Lupa Checkout is a mobile first website built to faciliate the payment interface for fitness programs through the Lupa mobile application.
                       </p>
                       <button type="button" class="btn btn-primary btn-lg featured-work-btn">View Project</button>
@@ -203,13 +205,13 @@ const Home = () => {
             </div>
 
             <div class="col-lg-7 d-flex flex-column align-items-lg-end align-items-center featured-work-container-right">
-              <h3 style={{ color: '#EEEEEE', fontSize: 18 }}>
+              <h3 class="featured-work-type-text">
                 Website
                       </h3>
               <h3 style={{ color: '#212121' }}>
                 Personal Website / Portfolio
                       </h3>
-              <p style={{ fontSize: 12, color: 'rgb(181, 181, 181)' }}>
+              <p class="featured-work-description">
                 My personal website and portfolio that allows visitors to contact me for freelancing services, learn a bit about me, and find direct links through my blockchain content/threads on Twitter.
                       </p>
                       <button type="button" class="btn btn-primary btn-lg featured-work-btn">View Project</button>
