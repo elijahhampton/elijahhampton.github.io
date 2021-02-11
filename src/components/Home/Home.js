@@ -108,7 +108,7 @@ const Home = () => {
                   My technological interest include general application development with a highlighted interest in DeFi. I am also readily available for freelance work for general applications.  Contact me and let's set up a time to talk about your next project.  In my free time I enjoy reading and exploring new blockchain companies in the FinTech space.  Check out some of my threads on decentralized applications and blockchain companies on my Twitter page.
     </p>
 
-    <button type="button" class="btn btn-primary btn-lg featured-work-btn">Contact Me</button>
+    <button onClick={handleOnOpenContactModal} type="button" class="btn btn-primary btn-lg featured-work-btn">Contact Me</button>
 
               </div>
             </div>
