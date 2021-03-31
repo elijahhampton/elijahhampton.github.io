@@ -2,15 +2,15 @@ import React from 'react';
 import Button from '../Button/Button';
 import './styles.css';
 
-const PortfolioItem = ({ imgSource, mockupType, numItems }) => (
+const PortfolioItem = ({ title, description, imgSource, mockupType, numItems, link }) => (
     <div className='portfolio-item w-50 d-flex align-items-center text-center flex-column my-5'>
     <div className='section-heading-text-container w-75 d-flex flex-column align-items-center text-center'>
         <h3 className='section-header'>
-            Social Networking App
+            {title}
         </h3>
 
         <h6 className='section-sub-header py-3'>
-          This is a social networking and content management app for personal trainers and people looking to find personal trainers.
+          {description}
         </h6>
     </div>
 
@@ -27,7 +27,7 @@ const PortfolioItem = ({ imgSource, mockupType, numItems }) => (
 
    
 
-    <Button>
+    <Button onClick={() => window.location.replace(link)}>
         VIEW CODE
     </Button>
 </div>

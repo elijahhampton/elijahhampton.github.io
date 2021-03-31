@@ -15,8 +15,8 @@ const NavBar = (props) => {
 
   <div className='options'>
 
-    <AiFillTwitterCircle className='mx-2' size={25} />
-    <AiFillGithub className='mx-2' size={25} />
+    <AiFillTwitterCircle className='mx-2' size={25} onClick={() => window.location.replace('https://mobile.twitter.com/elihampton_')} />
+    <AiFillGithub className='mx-2' size={25} onClick={() => window.location.replace('https://github.com/elijahhampton')} />
     <AiFillCalendar className='mx-2' size={25}  />
   </div>
   </div>

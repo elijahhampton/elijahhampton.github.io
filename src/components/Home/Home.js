@@ -14,24 +14,36 @@ import VainClothing from '../../images/VainClothing.png'
 
 const PORTFOLIO_PHOTOS = [
   {
+    title: 'Lupa: A Social Networking Fitness Application',
+    description: 'React Native, Redux, Typescript, Google Cloud Platform, and Stripe',
     imgSource: [LupaHome, LupaDashboard],
     mockupType: 'phone',
-    numItems: 2
+    numItems: 2,
+    link: 'https://github.com/elijahhampton/Lupa',
   },
   {
+    title: 'Lupa Checkout: A Responsive Mobile Checkout Page',
+    description: 'React and Google Cloud Platform',
     imgSource: [LupaCheckout],
     mockupType: 'phone',
     numItems: 1,
+    link: 'https://github.com/elijahhampton/lupa-web'
   },
   {
+    title: 'MyNFT: A Blockchain Based Website for Purchasing Influencer NFTs',
+    description: 'React, Redux, Ethereum, Web3, and Typescript',
     imgSource: [MyNFT],
     mockupType: 'computer',
     numItems: 1,
+    link: 'https://github.com/elijahhampton/my-nft-ui',
   },
   {
+    title: 'Vain Clothing: A Clothing Ecommerce Brand',
+    description: 'React, Redux, Google Cloud Platform, and Stripe',
     imgSource: [VainClothing],
     mockupType: 'computer',
     numItems: 1,
+    link: 'https://github.com/elijahhampton/vainclothing',
   },
 ]
 
