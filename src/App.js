@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom';
 import './App.css';
 
-
-
-import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom';
-import { useRouter } from './hooks/useRouter';
 import Home from './components/Home/Home';
+import NavBar from './components/NavBar/NavBar';
 
 
 function App() {
   return (
-    <div class="App">
+    <div className='App'>
       <BrowserRouter>
+        <NavBar />
         <Switch>
           <Route component={Home} location="/" />
         </Switch>

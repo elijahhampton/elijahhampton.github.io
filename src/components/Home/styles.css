@@ -1,0 +1,22 @@
+.section {
+    width: 100vw;
+    padding: 5% 20%;
+    display: table;
+    text-align: center;
+}
+
+.hero-section {
+    height: 500px;
+}
+
+.hero-div-text {
+    color: #212121;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.bio {
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 300;
+}

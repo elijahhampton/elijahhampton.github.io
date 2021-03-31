@@ -1,0 +1,45 @@
+.navbar {
+    height: 50px;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.navbar-home {
+    background-color: rgb(245, 245, 245);
+}
+
+.navbar-other {
+    background-color: white;
+}
+
+.navbar-link {
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #aaa;
+    overflow: hidden;
+    background: linear-gradient(to right, black, black 50%, #aaa 50%);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.navbar-link:hover {
+    background-position: 0 100%;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
