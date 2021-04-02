@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import './styles.css';
 
 const PortfolioItem = ({ title, description, imgSource, mockupType, numItems, link }) => (
-    <div className='portfolio-item w-50 d-flex align-items-center text-center flex-column my-5'>
+    <div className='portfolio-item w-50 d-flex align-items-center text-center flex-column my-5 p-4'>
     <div className='section-heading-text-container w-75 d-flex flex-column align-items-center text-center'>
         <h3 className='section-header'>
             {title}

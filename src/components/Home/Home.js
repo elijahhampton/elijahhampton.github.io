@@ -11,6 +11,10 @@ import LupaDashboard from '../../images/LupaDashboard.png'
 import LupaCheckout from '../../images/LupaCheckout.png'
 import MyNFT from '../../images/MyNFT.png'
 import VainClothing from '../../images/VainClothing.png'
+import EthGraphic from '../../images/eth-graphic.png';
+import ServiceOfferings from '../ServiceOfferings/ServiceOfferings';
+import LupaWebsite from '../../images/Lupa.png';
+import Footer from '../Footer/Footer';
 
 const PORTFOLIO_PHOTOS = [
   {
@@ -45,6 +49,14 @@ const PORTFOLIO_PHOTOS = [
     numItems: 1,
     link: 'https://github.com/elijahhampton/vainclothing',
   },
+  {
+    title: 'Lupa Website: A Responsive Website for the Lupa Mobile App',
+    description: 'React, Redux, and Google Cloud Platform',
+    imgSource: [LupaWebsite],
+    mockupType: 'computer',
+    numItems: 1,
+    link: 'https://github.com/elijahhampton/lupa',
+  },
 ]
 
 const Home = () => {
@@ -55,18 +67,14 @@ const Home = () => {
 
   return (
     <div className="w-100 container-fluid d-flex row justify-content-center" style={{display: 'table'}}>
-      <div className='section hero-section d-flex flex-column align-items-center justify-content-center position-relative'>
-          <p className='hero-div-text'>
-            Elijah Hampton is a <span style={{color: 'royalblue'}}>Fullstack Software Engineer</span> interested in <span style={{color: 'royalblue'}}>Web3</span> and <span style={{color: 'royalblue'}}>DeFi</span>.  Also he specializes in mobile, web, and general software development.
-          </p>
-          <p className='bio'>
-          I am currently 24 years old and I graduated from Auburn University (Auburn, AL) with a bachelors degree in Software Engineering. At the moment I reside in Melbourne, FL working for Northrop Grumman as a Junior Software Engineer. I have also spent time in other roles as a software developer for the psychology department at Auburn University and an entry level software engineer at Science Applications and International Corporation.
-
-I have spent most of my time as a professional software engineer using C++ and Python while most of my time outside of a professional setting has been used utilizing Javascript, NodeJS, React, Web3, and TypeScript.
-
-My technological interest include general application development with a highlighted interest in Web3 and DeFi. I am also readily available for freelance work for general applications. Contact me and let's set up a time to talk about your next project.
+      <div className='section hero-section d-flex flex-column align-items-center justify-content-evenly'>
+          <img src={EthGraphic} alt='ethereum' className='w-25 h-50' />
+          
+          <p className='hero-div-text text-center'>
+            Elijah Hampton is fullstack software engineer interested in Web3 and DeFi, a content creator, and UI/UX designer.
           </p>
       </div>
+      <ServiceOfferings />
 
       <div className='portfolio-items d-flex flex-row align-items-center justify-content-between flex-wrap'>
          {
@@ -75,8 +83,6 @@ My technological interest include general application development with a highlig
            })
          }
       </div>
-      
-      <ContactMe isOpen={contactMeIsOpen} closeModal={handleOnCloseContactModal} />
     </div>
   )
 }

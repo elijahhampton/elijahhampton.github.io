@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles.css';
 
-const Button = ({ children, onClick }) => (
-    <button className='button' type='button' onClick={onClick}>
+const Button = ({ children, onClick, inverted }) => (
+    <button className={`${inverted ? 'inverted-button' : 'button'}`} type='button' onClick={onClick}>
         {children}
     </button>
 )

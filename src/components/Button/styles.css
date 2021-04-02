@@ -1,11 +1,27 @@
 .button {
     background-color: #212121;
-    border: 1px solid #eee;
+    border: none;
     padding: 10px 20px;
     width: auto;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inverted-button {
+    background-color: #fff;
+    color: #212121;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    width: auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 .button:focus {

@@ -1,19 +1,21 @@
 .navbar {
-    height: 50px;
-    width: 100%;
-    padding-left: 8%;
-    padding-right: 8%;
+    height: 60px;
+    padding: 0 10px !important;
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
 }
 
 .navbar-home {
-    background-color: white;
+    background-color: #212121;
 }
 
 .navbar-other {
-    background-color: white;
+    background-color: #212121;
+}
+
+.navbar-brand {
+    color: #fff;
 }
 
 .navbar-link {
@@ -22,7 +24,7 @@
     cursor: pointer;
     text-decoration: none;
     padding: 10px 25px;
-    color: #aaa;
+    color: #fff;
     overflow: hidden;
     background: linear-gradient(to right, black, black 50%, #aaa 50%);
     background-clip: text;
@@ -42,4 +44,5 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    color: #fff;
 }
