@@ -20,6 +20,10 @@ const Footer = () => (
                 </div>
          
             </div>
+
+            <div>
+            <a href='https://ko-fi.com/I2I547JXE' target='_blank'><img height={36} style={{border: 0, height: 36}} src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+            </div>
         </div>
     </div>
 )

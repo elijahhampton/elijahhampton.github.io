@@ -4,14 +4,17 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
 }
 
 .navbar-home {
-    background-color: #212121;
+    background-color: transparent;
 }
 
 .navbar-other {
-    background-color: #212121;
+    background-color: transparent;
 }
 
 .navbar-brand {
@@ -46,3 +49,15 @@
     align-items: center;
     color: #fff;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #212121;
+    z-index: 5;
+  }
+
+  .right-options {
+      justify-content: flex-start;
+  }

@@ -1,10 +1,9 @@
 const desktopLaptopStyle = {
-    container: {
-        width: '80%', 
-        margin: 'auto', 
-        flexDirection: 'row', 
-        display: 'flex',
-        backgroundColor: '#FFFFFF'
+    root: {
+        color: '#fff',
+    },
+    ul: {
+        color: 'white',
     }
 }
 

@@ -1,0 +1,11 @@
+.divider {
+    border-left: 1px solid #fff;
+    height: 350px;
+  }
+  
+  .social-stick {
+      position: fixed;
+      bottom: 0px;
+      right: 25px;
+  }
+  

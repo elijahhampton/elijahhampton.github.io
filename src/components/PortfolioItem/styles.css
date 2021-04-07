@@ -1,9 +1,15 @@
+.portfolio-item {
+    width: 50%;
+    padding-bottom: 50%;
+    height: 100%;
+}
+
 .section-header {
-    color: #212121;
+    color: white;
     font-weight: 400;
 }
 
 .section-sub-header {
-     color: #ccc;
+     color: #aaa;
      font-weight: 300;
 }
