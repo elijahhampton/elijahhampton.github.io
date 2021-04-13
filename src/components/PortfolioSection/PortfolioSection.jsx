@@ -133,7 +133,7 @@ const PortfolioSection = () => {
              }
           </div>
     
-          <Pagination className='my-5' count={10} size="small" color='#fff' />
+          <Pagination className='my-5' count={10} size="small" />
         </div>
     )
 }
