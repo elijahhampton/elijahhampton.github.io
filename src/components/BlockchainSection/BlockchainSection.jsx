@@ -3,14 +3,24 @@ import './styles.css';
 
 import anime from 'animejs/lib/anime.es.js';
 
-import EthBlocks from '../../images/eth-blocks.png';
 import { Paper } from '@material-ui/core';
 
 import EthereumDiamond from '../../images/ethereum-logo.png';
 import { AiFillGithub } from 'react-icons/ai';
 
 const BlockchainSection = () => {
-    const a = [0,1,2,3,4,5];
+    const [contracts] = useState([
+      {
+        title: 'Simple ERC-20 Compatible Shared Wallet',
+        description: 'This repository contains the code for a shared erc20 compatible Ethereum wallet.',
+        link: 'https://github.com/elijahhampton/shared-wallet-erc-20',
+      },
+      {
+        title: 'Asset Tokenization Example',
+        description: 'This repository contains the code for a complete example of tokenizing an asset on the Ethereum platform as well as unit testing.',
+        link: 'https://github.com/elijahhampton/asset-tokenization',
+      },
+    ]);
 
     const [projectsAnimated, setProjectsAnimated] = useState(false);
 
@@ -85,7 +95,7 @@ const BlockchainSection = () => {
             
             <div className='my-5 d-flex flex-row align-items-center justify-content-center flex-wrap'>
                 {
-                    a.map(a => {
+                    contracts.map(({ title, description, link }) => {
                         return (
                             <Paper className='contract m-1 p-4 d-flex flex-column justify-content-between border border-light' elevation={10} style={{backgroundColor: '#eeeeee', width: 350, height: 350}}>
                             <div className='d-flex flex-row align-items-center justify-content-between'>
@@ -96,16 +106,16 @@ const BlockchainSection = () => {
         
                              <div className='contract-info text-start'>
                                 <h6 style={{color: '#212121'}}>
-                                    NFT Digital Rights Contract
+                                    {title}
                                 </h6>
                                 <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+                               {description}
                                 </p>
                             </div>
         
         
                             <div className='controls d-flex flex-row align-items-center justify-content-start'>
-                                <p>
+                                <p onClick={() => window.location.replace('https://github.com/elijahhampton/asset-tokenization')}>
                                     View on Github
                                 </p>
                             </div>
