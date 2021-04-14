@@ -116,15 +116,15 @@ const PortfolioSection = () => {
     }, [])
 
     return (
-        <div className='projects d-flex align-items-center flex-column section'>
-        <h1 class="ml11">
+        <div className='projects d-flex align-items-center flex-column'>
+        <h1 class="ml11 section text-center my-5">
       <span class="text-wrapper">
         <span class="line line1"></span>
-        <span  class="letters">I design and develop code for the end user</span>
+        <span  className="letters text-center">I design and develop code for the end user</span>
       </span>
     </h1>
     
-            <div className='portfolio-items d-flex flex-row align-items-start justify-content-between flex-wrap'>
+            <div className='portfolio-items d-flex flex-column flex-md-row align-items-center justify-content-evenly'>
              {
                PORTFOLIO_PHOTOS.map((portfolioItemProps, index, arr) => {
                  if (index >= 2) return;
@@ -133,7 +133,7 @@ const PortfolioSection = () => {
              }
           </div>
     
-          <Pagination className='my-5' count={10} size="small" />
+        {/*  <Pagination className='my-5' count={10} size="small" /> */}
         </div>
     )
 }

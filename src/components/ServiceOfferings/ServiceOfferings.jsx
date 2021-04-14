@@ -9,7 +9,7 @@ const ServiceOfferings = () => (
     <div className='service-offerings h-100 container d-flex flex-column align-items-center justify-content-evenly'>
 
 
-        <div className='w-75 offering d-flex flex-column align-items-start justify-content-evenly w-25 text-start'>
+        <div className='w-75 offering d-flex flex-column align-items-center align-items-md-start justify-content-evenly w-25 text-start'>
            <p>
            Creating a website for your next business? I will design and write code that leaves a lasting impression for your project.
            </p>

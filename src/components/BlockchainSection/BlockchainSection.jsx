@@ -83,7 +83,7 @@ const BlockchainSection = () => {
 
     return (
         <div className='blockchain-section'>
-            <div className='d-flex flex-column align-items-center justify-content-center'>
+            <div className='my-5 d-flex flex-column align-items-center justify-content-center'>
            {/* <img src={EthBlocks} style={{width: 280, height: 200}} /> */}
            <h1 class="ml12">
   <span class="text-wrapper2">
@@ -93,7 +93,7 @@ const BlockchainSection = () => {
 </h1>
             </div>
             
-            <div className='my-5 d-flex flex-row align-items-center justify-content-center flex-wrap'>
+            <div className='my-5 d-flex flex-column flex-md-row align-items-center justify-content-center flex-md-wrap'>
                 {
                     contracts.map(({ title, description, link }) => {
                         return (

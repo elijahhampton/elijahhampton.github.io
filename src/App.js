@@ -8,7 +8,7 @@ import Home from './components/Home/Home';
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App overflow-hidden overflow-md-scroll'>
       <HashRouter>
         <Switch>
           <Route component={Home} exact location="/" />

@@ -30,7 +30,7 @@ function myFunction() {
   return (
     <div
     id='navbar'
-      className={`${
+      className={`d-none d-md-block ${
         location.pathname != "/" ? "navbar-other" : "navbar-home"
       } navbar w-100`}
     >

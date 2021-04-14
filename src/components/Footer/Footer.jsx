@@ -6,7 +6,7 @@ const ICON_SIZE = 35;
 
 const Footer = () => (
     <div className='footer d-flex align-items-center justify-content-center p-5'>
-        <div className='d-flex align-items-center justify-content-between w-100'>
+        <div className='d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between w-100'>
             <div className='contact-information'>
                 <h4 id='email' className='py-4'>
                     ejh0017@gmail.com
@@ -21,7 +21,7 @@ const Footer = () => (
          
             </div>
 
-            <div>
+            <div className='my-5 my-md-1'>
             <a href='https://ko-fi.com/I2I547JXE' target='_blank'><img height={36} style={{border: 0, height: 36}} src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
             </div>
         </div>
