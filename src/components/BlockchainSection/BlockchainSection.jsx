@@ -17,7 +17,7 @@ const BlockchainSection = () => {
       },
       {
         title: 'Asset Tokenization Example',
-        description: 'This repository contains the code for a complete example of tokenizing an asset on the Ethereum platform as well as unit testing.',
+        description: 'This repository contains an example of a full deployed and tested ERC20 token as well as a CrowdSource smart contract to mimic an ICO.',
         link: 'https://github.com/elijahhampton/asset-tokenization',
       },
     ]);
