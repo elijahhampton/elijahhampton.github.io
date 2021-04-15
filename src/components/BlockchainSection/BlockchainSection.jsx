@@ -20,6 +20,11 @@ const BlockchainSection = () => {
         description: 'This repository contains an example of a full deployed and tested ERC20 token as well as a CrowdSource smart contract to mimic an ICO.',
         link: 'https://github.com/elijahhampton/asset-tokenization',
       },
+      {
+        title: 'Opportunity Protocol Core',
+        description: 'This repository contains a set of smart contracts that will power the Opportunity Protocol.  Opportunity will be a decentralized job market and liquidity provider.',
+        link: 'https://github.com/OpportunityProtocol/opportunity-core',
+      },
     ]);
 
     const [projectsAnimated, setProjectsAnimated] = useState(false);
@@ -115,7 +120,7 @@ const BlockchainSection = () => {
         
         
                             <div className='controls d-flex flex-row align-items-center justify-content-start'>
-                                <p onClick={() => window.location.replace('https://github.com/elijahhampton/asset-tokenization')}>
+                                <p onClick={() => window.location.replace(link)}>
                                     View on Github
                                 </p>
                             </div>
