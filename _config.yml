@@ -1,17 +1,28 @@
+# Site name and description
 name: Elijah Hampton
 description: Personal website
+
+# Menu configuration
 menu:
  - page: Notes and Writing
    links:
     - title: "Cryptography"
-    - url: "#cryptography" 
+      url: "/cryptography" 
 menu_external:
- - title: Email
-   url: "https://elijahhamptonj@proton.me"
  - title: Github
    url: "https://www.github.com/elijahhampton"
+
+# Build settings
 mathjax: false
 markdown: kramdown
 encoding: utf-8
-baseurl: elijahhampton.github.io
+baseurl: 
 locale: en_GB
+
+# Define default layouts
+defaults:
+  - 
+    scope:
+      path: "notes/cryptography"
+    values:
+      layout: "post"

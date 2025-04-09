@@ -12,9 +12,9 @@
 				{% if item.links %}
 					<li>
 						<a href="{{ item.url }}">{{ item.page }}</a>
-						<a href="#" id="btn-{{ menu_token }}{{ item.url | replace: '/', ''  }}" data-toggle="collapse" data-target="#submenu-{{ menu_token }}{{ item.url | replace: '/', ''  }}" aria-expanded="false"></a>
+						<a href="#" id="btn-{{ menu_token }}{{ item.url | replace: '/', ''  }}" data-toggle="collapse" data-target="#submenu-{{ menu_token }}{{ item.url | replace: '/', ''  }}" aria-expanded="true"></a>
 					</li>
-					<ul class="collapse" id="submenu-{{ menu_token }}{{ item.url | replace: '/', ''  }}" role="menu" aria-labelledby="btn-{{ menu_token }}{{ item.url | replace: '/', ''  }}">
+					<ul class="" id="submenu-{{ menu_token }}{{ item.url | replace: '/', ''  }}" role="menu" aria-labelledby="btn-{{ menu_token }}{{ item.url | replace: '/', ''  }}">
 					{% for link in item.links %}
 						<li><a href="{{ item.url }}{{ link.url }}">{{ link.title }}</a></li>
 					{% endfor %}
@@ -24,10 +24,3 @@
 				{% endif %}
 			{% endfor %}
 		</ul>
-		<aside class="external_links">
-			<ul class="nav">
-			{% for item in site.menu_external %}
-				<li><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></li>
-			{% endfor %}
-			</ul>
-		</aside>

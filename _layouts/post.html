@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<body>
+		<div class="pure-container" data-effect="pure-effect-push">
+		
+			<div class="pure-pusher-container">
+				<div class="pure-pusher">
+					<label class="pure-toggle-label hidden-md-up" for="pure-toggle-left" data-toggle-label="left"><span class="pure-toggle-icon"></span></label>
+					<div class="container-fluid">
+						<div class="row">
+							
+							<main class="content col-md-9" role="main">
+						
+								<article>
+									<h1>{{ page.title }}</h1>
+									{{ content }}
+									
+
+								
+								</article>
+								<footer class="text-xs-center hidden-print">
+									<small class="text-muted">Copyright {{ site.time | date: '%Y' }}, all lefts reserved. Developed by <a href="http://olevik.me/">Ole Vik</a>, hosted on GitHub pages.</small>
+								</footer>
+							</main>
+						</div>
+					</div>
+				</div>
+			</div>
+			<label class="pure-overlay" for="pure-toggle-left" data-overlay="left"></label> 
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.0/anchor.js"></script>
+		<script>
+		anchors.options = {
+			placement: 'right',
+			visible: 'touch ',
+			truncate: 128
+		};
+		anchors.add('article h2, article h3, article h4, article h5, article h6');
+		
+		$(function() {
+			$("table").addClass("table");
+			$("table").wrap('<div class="table-responsive"></div>');
+		});
+		</script>
+		<!-- Add MathJax support -->
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script>
+window.MathJax = {
+  tex: {
+	inlineMath: [['$', '$'], ['\\(', '\\)']],
+	displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default'
+    });
+  });
+</script>
+		{% if site.mathjax %}
+		<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+		{% endif %}
+	</body>
+</html>
